@@ -1,0 +1,36 @@
+.overlay {
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 10;
+}
+.modal-wrapper {
+    position: fixed;
+    border: 1px solid;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #fff;
+    padding: 25px;
+}
+.modal-wrapper header {
+    display: flex;
+    justify-content: flex-end;
+}
+.button-close {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    outline: none;
+    background: #fff;
+    border: none;
+    font-size: 45px;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,26 @@
+.heatmap-wrapper {
+    flex-basis: calc(50% - 25px);
+}
+
+.heatmap-wrapper h2 {
+    font-size: 26px;
+    margin: 35px 0;
+    text-transform: uppercase;
+}
+
+.heatmap-wrapper h4 {
+    text-transform: lowercase;
+    margin: 25px 0 10px;
+    font-weight: 400;
+    color: var(--text-color-primary);
+    font-size: 16px;
+}
+
+.heatmap-wrapper h4::first-letter {
+    text-transform: uppercase;
+}
+
+.heatmap-wrapper .react-calendar-heatmap text {
+    font-size: 10px;
+    fill: var(--text-color-primary);
+}

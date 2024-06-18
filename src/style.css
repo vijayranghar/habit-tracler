@@ -1,0 +1,89 @@
+:root {
+  --text-color-primary: #000000;
+  --primary-background-color: #fcfcfc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-background-color);
+  font-family: Rubik, sans-serif ;
+  color: var(--text-color-primary);
+  padding-bottom: 100px;
+}
+.modal-open {
+  overflow: hidden;
+}
+.habit-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .habit-wrapper {
+    display: block;
+  }
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @media(max-width:992px) {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 576pc) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.add-new-habit {
+  margin-top: 30px;
+}
+.add-new-habit-button {
+  height: 40px;
+  width: 40px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 32px;
+  line-height: 40px;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+.add-new-habit-button.rotate {
+  transform: rotate(360deg);
+}

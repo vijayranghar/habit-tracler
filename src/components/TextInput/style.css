@@ -1,0 +1,30 @@
+.input-wrapper {
+    margin-top: 55px;
+}
+.input-wrapper input[type="text"], .input-wrapper input[type="date"] {
+    display: block;
+    height: 40px;
+    padding: 15px;
+    width: 100%;
+    margin: 15px 0;
+}
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.button-wrapper button {
+    height: 40px;
+    width: calc(50% - 5px);
+    text-transform: uppercase;
+    transition: all 350ms linear;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--text-color-primary);
+    background: #fff;
+    font-weight: 600;
+}
+.button-wrapper button:hover {
+    background-color: var(--text-color-primary);
+    color: #fff;
+}

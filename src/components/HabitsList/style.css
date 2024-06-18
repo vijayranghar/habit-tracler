@@ -1,0 +1,100 @@
+.habit-list-wrapper {
+    flex-basis: calc(50% - 25px);
+}
+
+.habit-list-wrapper h2 {
+    font-size: 26px;
+    margin: 35px 0;
+    text-transform: uppercase;
+}
+
+.habit-list-wrapper ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.habit-list-wrapper p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.habit-list-wrapper p.completed {
+    text-decoration: line-through;
+}
+.habit-list-wrapper .error-message {
+    font-size: 18px;
+    font-weight: 400;
+}
+.habit-list-wrapper p::first-letter {
+    text-transform: uppercase;
+
+}
+
+.habit-list-wrapper h3 {
+    margin: 25px 0 14px;
+    font-weight: 400;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: #000;
+    color: #fff;
+    padding: 3px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+}
+
+.checkbox-wrapper {
+    position: relative;
+    cursor: pointer;
+    font-size: 0;
+    margin-right: 5px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--text-color-primary);
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+}
+
+input[type="checkbox"]:checked+.custom-checkbox::after {
+    display: block;
+}
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+    border: solid var(--text-color-primary);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 0px;
+    width: 3px;
+    height: 10px;
+}
